@@ -1,0 +1,42 @@
+<div class="bgimg">
+    <div class="loginmain_div"> 
+        <form [formGroup]="loginform" (ngSubmit)="onLoginSubmit()">
+            <div class="col-md-12">
+                <h4 class="login_head">Login</h4>
+            </div>
+            <div class="clear"></div>
+            <div class="col-md-12">
+                <label for="" class="side_labels">User Name</label>
+                <input type="text" placeholder="Enter Username"  formControlName="Username" class="form-control form-control_pad" [(ngModel)]="Username" [ngClass]="{ 'is-invalid': submitted && logincontrolsFunc.Username.errors }">
+                    <div *ngIf="submitted && logincontrolsFunc.Username.errors" class="errmgs">
+                        <div *ngIf="logincontrolsFunc.Username.errors.required">Username is required</div>
+                        <div *ngIf="logincontrolsFunc.Username.errors.minlength">Username is atleast 5 characters</div>                        
+                    </div>
+            </div>
+            <div class="clear"></div>         
+            <div class="col-md-12">
+                <label for="" class="side_labels">Password</label>
+                <input type="password" placeholder="Enter Password" formControlName="Password" class="form-control form-control_pad" [(ngModel)]="Password" [ngClass]="{ 'is-invalid': submitted && logincontrolsFunc.Password.errors }">
+                <div *ngIf="submitted && logincontrolsFunc.Password.errors" class="errmgs">
+                    <div *ngIf="logincontrolsFunc.Password.errors.required">Password is required</div> 
+                    <div *ngIf="logincontrolsFunc.Password.errors.minlength">Password is atleast 5 characters</div>                       
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="col-md-12"> 
+                <button class="btn btn-sm btn-success login_btn">Login</button>                                
+            </div>
+            <div class="clear"></div>
+            <div class="col-md-12">
+                <div class="register_link-div">
+                    <a [routerLink]="['/Register']" class="clickregister_link"><span>Click here to Register</span></a> 
+                </div>                
+            </div>
+            <div class="clear"></div>
+        </form>        
+        
+
+    </div>
+</div>
+
+

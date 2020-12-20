@@ -1,0 +1,35 @@
+<div class="col-md-2"></div>
+<div class="col-md-4">
+    <div class="vehicleinsurancemain_div">    
+        <form action="">
+            <div class="pad_1">
+                <label for="">Vehicle Number</label>
+                <input type="number" placeholder="Enter Vehicle No"  formControlName="Vehicleno" class="form-control form-control_pad">
+            </div>
+            <div class="pad_1">
+                <label for="">Insurance Duration</label><br>
+                <div class="inlinedisp">
+                    <label for="">From</label>
+                    <input type="date" formControlName="Insurancedurationfrom" class="form-control form-control_pad">
+                </div>
+                <div class="inlinedisp flt_r">
+                    <label for="">To</label>
+                    <input type="date" formControlName="Insurancedurationto" class="form-control form-control_pad">
+                </div>              
+            </div>             
+            <div class="pad_1">
+                <label for="">Insurance Amount</label>
+                <input type="number" placeholder="Insurance Amount"  formControlName="Insuranceamount" class="form-control form-control_pad">
+            </div>           
+            <div class="pad_1">
+                <button class="btn btn-primary" (click)="vehicleform()">Ok</button>
+                <button class="btn btn-danger">Cancel</button>
+            </div>
+        </form>
+    </div>
+    
+</div>
+<div class="col-md-6"></div>
+
+
+

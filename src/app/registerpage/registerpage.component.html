@@ -1,0 +1,53 @@
+<div class="register_page">
+    <form action="">
+        <div class="user_register_head_div">
+            <h4 class="register_head">Registration</h4>            
+        </div>    
+        <div class="">            
+            <label for="" class="side_labels">UserName</label>            
+            <div class="col-md-12">
+                <input type="text" placeholder="Username" formControlName="Username" class="form-control form-control_pad" [(ngModel)]="registerobj.Username" [ngClass]="{ 'is-invalid': submitted && logincontrolsFunc.Username.errors }">
+            </div>
+        </div>    
+       
+        <div class="row divmarg">            
+            <label for="" class="side_labels">EmailId</label>            
+            <div class="col-md-12">
+                <input type="email" placeholder="Emailid" formControlName="Emailid" class="form-control form-control_pad" [(ngModel)]="registerobj.Emailid" [ngClass]="{ 'is-invalid': submitted && logincontrolsFunc.Emailid.errors }">
+            </div>
+        </div>
+        <div class="row divmarg">            
+            <label for="" class="side_labels">Phone No</label>          
+            <div class="col-md-6">
+                <input type="number" placeholder="Phoneno" formControlName="Phoneno" class="form-control form-control_pad" [(ngModel)]="registerobj.Phoneno" [ngClass]="{ 'is-invalid': submitted && logincontrolsFunc.Phoneno.errors }">
+            </div>
+        </div>
+        <div class="row divmarg">            
+            <label for="" class="side_labels">Password</label>          
+            <div class="col-md-12">
+                <input type="password" placeholder="Phoneno" formControlName="Phoneno" class="form-control form-control_pad" [(ngModel)]="registerobj.Phoneno" [ngClass]="{ 'is-invalid': submitted && logincontrolsFunc.Phoneno.errors }">
+            </div>
+        </div>
+        <div class="row divmarg">            
+            <label for="" class="side_labels">Confirm Password</label>          
+            <div class="col-md-12">
+                <input type="password" placeholder="Phoneno" formControlName="Phoneno" class="form-control form-control_pad" [(ngModel)]="registerobj.Phoneno" [ngClass]="{ 'is-invalid': submitted && logincontrolsFunc.Phoneno.errors }">
+            </div>
+        </div>
+        <div class="form-group checkbox_div">
+            <input type="checkbox" formControlName="acceptTerms" id="acceptTerms" class="form-check-input" [ngClass]="{ 'is-invalid': submitted && reqactcontrolsFunc.acceptTerms.errors }" />
+            <label for="acceptTerms" class="form-check-label is-invalid_clr">Accept Terms & Conditions</label>
+            <div *ngIf="submitted && reqactcontrolsFunc.acceptTerms.errors" class="errmgs">Accept Ts & Cs is required</div>
+        </div>
+        <div class="row divmarg">
+            <div class="col-md-2"></div>
+            <div class="col-md-6">
+                <div class="registerlink_div">
+                    <button class="btn btn-sm btn-primary">Register</button> &nbsp;
+                    <a [routerLink]="['/Login']" class="anchor_tag_clr"><span>Cancel</span></a> 
+                </div>
+            </div>
+        </div>
+    
+    </form>
+</div>

@@ -1,0 +1,210 @@
+.mainheader_div{
+    background: #fff;
+    padding: 10px 0;
+}
+.mail_details_div{
+    text-align: left;
+}
+.mail_details_div ul{
+    margin: 0;
+    padding: 0;
+}
+.mail_details_div ul li{
+    
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #080808;
+    vertical-align: top;
+    /* margin: 10px 0; */
+}
+.phone_symb{
+    color: #fff;
+    margin: 0 3px 0 0;
+}
+.phone_symb i{
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #2b4392;
+    font-size: 17px;
+    padding-top: 13px;
+    margin-right: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.phone_symb i:after{
+    position: absolute;
+    content: '';
+    width: 95%;
+    height: 95%;
+    left: 0;
+    top: 0;
+    border: 1px solid #2b4392;
+    transform: rotate(45deg);
+    border-radius: 2px;
+}
+.mail_details_div ul li p{
+    margin: 10px 0;
+    color: #636363;
+}
+.mail_details_div ul li a{
+    text-transform: lowercase;
+    color: darkgreen ;
+    font-size: 14px;
+    font-family: monospace;
+}
+.socialicons_div ul{
+    margin-top: 23px;
+}
+.socialicons_div ul li{
+    margin: 0;
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 3px!important;
+    padding-left: 3px!important;
+}
+.socialicons_div ul li a{
+    box-shadow: 0 10px 14px -7px #276873;
+    
+    border-radius: 33px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 8px 15px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #3d768a;
+}
+.socialicons_div ul li .fcba{
+    background-color: #599bb3;
+}
+.socialicons_div ul li .twa{
+    padding: 8px 12px;
+    background-color: #00acee!important;
+}
+.socialicons_div ul li .linka{
+    padding: 8px 12px;
+    background-color: #0e76a8!important;
+}
+.socialicons_div ul li .ytba{
+    padding: 8px 10px;
+    background-color: #c4302b!important;
+}
+.socialicons_div ul li .wtsa{
+    padding: 4px 10px;
+    background-color: #25d366!important;
+    font-size: 20px
+}
+
+
+
+/* navbar */
+
+.navbarmain_div{
+    border-radius: 0;
+    background-color: #204e88;
+    border: none;
+    margin: 0;
+    box-shadow: 0 3px 3px rgba(0,0,0,.05) ;   
+}
+.navbardiv{
+    text-align:right;
+}
+.navbardiv >ul{
+    margin: 0;
+    padding: 8px 0px;    
+}
+.navbardiv ul li{
+    list-style-type: none;
+}
+.navbardiv >ul >li{  
+    display: inline-block;
+    position: relative;
+    /* border-right: 1px solid #716d6d;     */
+    padding: 0 5px;
+}
+.navbardiv >ul >li >a{
+    border-radius: 0;
+    background-color: #f2f2f2;
+    border: none;
+    margin: 0;
+    text-decoration-line: none;
+    /* box-shadow: 0 3px 3px rgba(0,0,0,.05); */
+    color: #696666;
+    font-size: 16px;    
+    padding: 6px 15px;    
+    display: block;
+    border-radius: 15px;
+}
+.active{
+    color: #089433 !important;
+    font-weight: 600;
+}
+.navbardiv >ul >li >a:hover{
+    color: #459947!important
+}
+.subdropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;       
+    padding: 5px 0px 0px 0px;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    min-width: 150px;
+    z-index: 1000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: none;
+}
+ .subdropdown li{
+    border-bottom: 1px solid #d4d3d3;
+} 
+.subdropdown li a{
+    font-size: 13px;
+    font-weight: 400;
+    font-family: sans-serif;
+    padding: 10px 20px!important;
+    display: block;   
+    clear: both; 
+    line-height: 1.42857143;    
+    color: #696666;
+    white-space: nowrap;
+    text-decoration: none;
+} 
+.navbardiv_li{
+position: relative;
+}
+.subdropdown{
+    position: absolute;
+    /* top: 0px; */
+    left: 4px;
+    display: none;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+.navbardiv_li:hover > .subdropdown {
+    display: block;
+}
+.insurance_img{
+    width: 100%;
+    position: relative;
+    /* top: -15px; */
+    bottom: 45px;
+}
+.logo_div{
+    width: 50%;
+    height: 100px;
+}

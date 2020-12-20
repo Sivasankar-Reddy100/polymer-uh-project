@@ -1,0 +1,32 @@
+<div class="col-md-2"></div>
+<div class="col-md-4">
+    <div class="travelinsurancemain_div">    
+        <form [formGroup]="travelform">
+            <div class="pad_1">
+                <label for="">Ticket ID</label>
+                <input type="number" placeholder="Enter Ticket Id"  formControlName="Ticketid" class="form-control form-control_pad">
+            </div>
+            <div class="pad_1">
+                <label for="">DOJ</label>
+                <input type="date" placeholder="Doj"  formControlName="Journey" class="form-control form-control_pad">
+            </div>
+            <div class="pad_1">
+                <label for="">Claim Amount</label>
+                <input type="number" placeholder="Claim Amount"  formControlName="Claimamount" class="form-control form-control_pad">
+            </div>
+            <div class="pad_1">
+                <label for="">Bank Account No</label>
+                <input type="number" placeholder="Account Number"  formControlName="Accountnumber" class="form-control form-control_pad">
+            </div>
+            <div class="pad_1">
+                <button class="btn btn-primary" (click)="travelconfirm()"><a [routerLink]="['Payment']"></a>Confirm</button>
+                <button class="btn btn-danger">Cancel</button>
+            </div>
+        </form>
+    </div>
+    
+</div>
+<div class="col-md-6"></div>
+
+
+<router-outlet></router-outlet>

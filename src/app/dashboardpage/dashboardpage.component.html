@@ -1,0 +1,113 @@
+<div class="mainheader_div">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="logo_div">
+          <h1>
+            <a href="#"
+              ><img
+                src="../../assets/images/insurance_logo2.jpg"
+                alt="insurance_logo"
+                class="insurance_img"
+            /></a>
+          </h1>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="mail_details_div">
+          <ul>
+            <li>
+              <span class="phone_symb"><i class="fa fa-phone"></i></span>
+            </li>
+            <li>
+              <p>
+                <span>Call Us:</span><a href=""> +91 7013814324, 9885811057</a>
+              </p>
+              <p>
+                <span>Mail id:</span><a href=""> lh@generalinsurance.com</a>
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="socialicons_div">
+          <ul>
+            <li>
+              <a href="#" class="fcba"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#" class="twa"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" class="linka"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#" class="ytba"><i class="fa fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#" class="wtsa"><i class="fa fa-whatsapp"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</div>
+
+<div class="navbarmain_div">
+  <div class="container">
+    <div class="row">
+      <div class="navbardiv">
+        <ul class="navbardiv_ul" (click)="manualtoggle()">
+          <li class="navbardiv_li">
+            <a [routerLink]="['/Home']" class="active">Home</a>
+          </li>
+          <li class="navbardiv_li">
+            <a [routerLink]="['/Products']"
+              >Products <span class="caret"></span
+            ></a>
+            <ul class="subdropdown" [ngStyle]="{ display: displayddl }">
+              <li>
+                <a [routerLink]="['Products/TravelInsurance']"
+                  >Travel Insurance</a
+                >
+              </li>
+              <li>
+                <a [routerLink]="['Products/HealthInsurance']"
+                  >Health Insurance</a
+                >
+              </li>
+              <li>
+                <a [routerLink]="['Products/VehicleInsurance']"
+                  >Vehicle Insurance</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="navbardiv_li">
+            <a href="#">Claims <span class="caret"></span></a>
+            <ul class="subdropdown" [ngStyle]="{ display: displayddl }">
+              <li><a href="#">Travel Claims</a></li>
+              <li><a href="#">Health Claims</a></li>
+              <li><a href="#">Motor Claims</a></li>
+              <li><a href="#">Home Claims</a></li>
+            </ul>
+          </li>
+          <li class="navbardiv_li">
+            <a href="#">Renewals <span class="caret"></span></a>
+            <ul class="subdropdown" [ngStyle]="{ display: displayddl }">
+              <li><a href="#">Health Policy</a></li>
+              <li><a href="#">Motor Policy</a></li>
+            </ul>
+          </li>
+          <li class="navbardiv_li"><a href="#">Contact Us</a></li>
+          <li class="navbardiv_li"><a [routerLink]="['Login']">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,34 @@
+<div class="col-md-2"></div>
+<div class="col-md-4">
+    <div class="healthinsurancemain_div">    
+        <form [formGroup]="healthinsuranceform">
+            <div class="pad_1">
+                <label for="">Policy Number</label>
+                <input type="number" placeholder="Enter Policy Id"  formControlName="Policyid" class="form-control form-control_pad" [(ngModel)]="Policyid" [ngClass]="{ 'is-invalid': submitted && logincontrolsFunc.Policyid.errors }">
+            </div>           
+            <div class="pad_1">
+                <label for="">Policy Duration</label><br>
+                <div class="inlinedisp">
+                    <label for="">From</label>
+                    <input type="date" formControlName="Policydurationfrom" class="form-control form-control_pad"  [(ngModel)]="Policydurationfrom" [ngClass]="{ 'is-invalid': submitted && logincontrolsFunc.Policydurationfrom.errors }"> 
+                </div>
+                <div class="inlinedisp flt_r">
+                    <label for="">To</label>
+                    <input type="date" formControlName="Policydurationto" class="form-control form-control_pad"  [(ngModel)]="Policydurationto" [ngClass]="{ 'is-invalid': submitted && logincontrolsFunc.Policydurationto.errors }">
+                </div>              
+            </div>               
+            <div class="pad_1">
+                <label for="">Policy Amount</label>
+                <input type="number" placeholder="Policy Amount"  formControlName="Policyamount" class="form-control form-control_pad"  [(ngModel)]="Policyamount" [ngClass]="{ 'is-invalid': submitted && logincontrolsFunc.Policyamount.errors }">
+            </div>           
+            <div class="pad_1">
+                <button class="btn btn-primary" (click)="healthform()">Ok</button>
+                <button class="btn btn-danger">Cancel</button>
+            </div>
+        </form>
+    </div>
+    
+</div>
+<div class="col-md-6"></div>
+
+
