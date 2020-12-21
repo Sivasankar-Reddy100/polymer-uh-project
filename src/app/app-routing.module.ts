@@ -9,21 +9,23 @@ import { TravelinsuranceComponent } from './travelinsurance/travelinsurance.comp
 import { VehicleinsuranceComponent } from './vehicleinsurance/vehicleinsurance.component';
 
 const routes: Routes = [
-  {path:'',component:LoginpageComponent},
-  { path: 'Login', component:LoginpageComponent},
-  { path: 'Dashboard', component:DashboardpageComponent,children:[  
-  
-  { path: 'Products/TravelInsurance', component:TravelinsuranceComponent,children:[
-    { path: 'Payment', component:PaymentpageComponent}, 
-    { path: 'Success', component:SuccesspageComponent}
-  ] 
-},
-  { path: 'Products/HealthInsurance', component:HealthinsuranceComponent},
-  { path: 'Products/VehicleInsurance', component:VehicleinsuranceComponent},
-  
-  ]},
-  
- 
+  { path: '', component: LoginpageComponent },
+  { path: 'Login', component: LoginpageComponent },
+  {
+    path: 'Dashboard', component: DashboardpageComponent, children: [
+      { path: '', redirectTo: 'Products/TravelInsurance', pathMatch: 'full' },
+      {
+        path: 'Products/TravelInsurance', component: TravelinsuranceComponent, children: [
+          { path: 'Payment', component: PaymentpageComponent },
+          { path: 'Success', component: SuccesspageComponent }
+        ]
+      },
+      { path: 'Products/HealthInsurance', component: HealthinsuranceComponent },
+      { path: 'Products/VehicleInsurance', component: VehicleinsuranceComponent },
+    ]
+  },
+
+
 ];
 
 @NgModule({

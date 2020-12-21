@@ -1,5 +1,5 @@
 .bgimg {
-  /* background-image: url('../../assets/images/mainbg_img.jpeg'); */
+  background-image: url("../../assets/images/mybg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   position: fixed;
@@ -15,9 +15,8 @@
   padding: 15px 0;
 }
 .login_head {
-  /* color: #1ae6e6;
-   */
-  color: black;
+  color: #1ae6e6;
+  /* color: black; */
   font-weight: 900;
   font-size: 25px;
   text-align: center;
